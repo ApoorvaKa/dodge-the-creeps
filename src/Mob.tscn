@@ -30,7 +30,7 @@ animations = [ {
 radius = 26.0
 height = 16.0
 
-[node name="Mob" type="RigidBody2D"]
+[node name="Mob" type="RigidBody2D" groups=["mobs"]]
 position = Vector2( 0, -1 )
 collision_mask = 0
 gravity_scale = 0.0
@@ -43,7 +43,6 @@ __meta__ = {
 scale = Vector2( 0.75, 0.75 )
 frames = SubResource( 1 )
 animation = "fly"
-frame = 1
 playing = true
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
